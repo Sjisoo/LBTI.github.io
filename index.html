@@ -5,16 +5,51 @@ author_profile: true
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      	<meta charset="UTF-8">
-        <title>LBTI</title><meta name="viewport" content="width=device-width"/>
-        <script src="https://unpkg.com/jquery"></script>
-        <script src="https://unpkg.com/survey-jquery@1.8.18/survey.jquery.min.js"></script>
-        <link href="https://unpkg.com/survey-knockout@1.8.18/modern.css" type="text/css" rel="stylesheet"/>
-        <link rel="stylesheet" href="./index.css"></head>
-    <body>
-        <div id="surveyElement" style="display:inline-block;width:100%;"></div>
-        <div id="surveyResult"><img id="img"></div>
-        <script type="text/javascript" src="./index.js"></script>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>LBTI</title>
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/survey-jquery@1.8.18/survey.jquery.min.js"></script>
+    <link href="https://unpkg.com/survey-knockout@1.8.18/modern.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="surveyElement" style="display:inline-block;width:100%;"></div>
+    <div id="surveyResult"><img id="img"></div>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyAbqoVfjy0q6QKcNdRnFbjalmZR5smreaQ",
+        authDomain: "lbti-4199c.firebaseapp.com",
+        databaseURL: "https://lbti-4199c-default-rtdb.firebaseio.com",
+        projectId: "lbti-4199c",
+        storageBucket: "lbti-4199c.appspot.com",
+        messagingSenderId: "262129377511",
+        appId: "1:262129377511:web:e87c347b1eb4699dd5c242",
+        measurementId: "G-WESRC0Y5RH"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    // getting the text value from the database
+    var bigOne = document.getElementById('bigOne');
+    var dbRef = firebase.database().ref().child('text');
+    dbRef.on('value', snap => bigOne.innerText = snap.val());
+</script>
+
 </html>
