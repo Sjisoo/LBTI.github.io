@@ -2,11 +2,44 @@ Survey
     .StylesManager
     .applyTheme("modern");
 
+var database = firebase.database();
+
 var json = {
-    "title": "LBTI (Leadership Type Indicator on Blueboard)",
+    "title": "LBTI",
     "pages": [
         {
             "name": "page1",
+            "elements": [
+                {
+                    "type": "text",
+                    "name": "1",
+                    "title": "팀명을 적어주세요",
+                    // "isRequired": true
+                }, {
+                    "type": "text",
+                    "name": "1",
+                    "title": "성함을 적어주세요",
+                    // "isRequired": true
+                }, {
+                    "type": "radiogroup",
+                    "name": "LorT",
+                    "title": "당신은 팀/Unit장인가요?",
+                    // "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "L",
+                            "text": "그렇다."
+                        },
+                        {
+                            "value": "T",
+                            "text": "그렇지 않다."
+                        },
+                    ]
+                },
+            ]
+        },
+        {
+            "name": "page2",
             "elements": [
                 {
                     "type": "radiogroup",
@@ -17,11 +50,11 @@ var json = {
                         {
                             "value": "A",
                             "text": "새로 생긴 팀을 맡으면 나는 그룹 토의 방식으로 의견을 나눈다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "새로 생긴 팀을 맡으면 나는 선발된 사람과 개별적 대화로 의견을 나눈다."
-                        }, 
+                        },
                     ]
                 }, {
                     "type": "radiogroup",
@@ -32,7 +65,7 @@ var json = {
                         {
                             "value": "A",
                             "text": "나는 일을 할 때 현실적인 사람들과 잘 맞는다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "나는 일을 할 때 상상력이 풍부한 사람들과 잘 맞는다."
@@ -47,7 +80,7 @@ var json = {
                         {
                             "value": "A",
                             "text": "다른 사람들은 나를 굳센 사람으로 여길 것이다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "다른 사람들은 나를 정이 많은 사람으로 여길 것이다."
@@ -64,7 +97,7 @@ var json = {
                         {
                             "value": "A",
                             "text": "나는 일을 계획 할 때 사전에 잘 구조화하고 설계한다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "나는 일을 계획 할 때 유연하고 빈번한 조절이 가능하게 설계한다."
@@ -79,7 +112,7 @@ var json = {
                         {
                             "value": "A",
                             "text": "나는 다른 사람들에게 말하기를 좋아하고, 쉽게 친해지게 되는 사람으로 여겨진다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "나는 다른 사람들에게 말없고 조용하며, 친해지기 어려운 사람으로 여겨진다."
@@ -94,7 +127,7 @@ var json = {
                         {
                             "value": "A",
                             "text": "나는 비즈니스 전략을 구상 할 때 세부적인 계획에 대하여 고려한다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "나는 비즈니스 전략을 구상 할 때 넓은 안목에서 고려한다."
@@ -109,7 +142,7 @@ var json = {
                         {
                             "value": "A",
                             "text": "조직에서 다른 사람과 대화 할 때 나는 사실 그대로 말할려고 한다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "조직에서 다른 사람과 대화 할 때 나는 다른 사람의 기분을 상하게하거나 상처를 주지않도록 말할려고 한다."
@@ -124,7 +157,7 @@ var json = {
                         {
                             "value": "A",
                             "text": "나는 조직적인 것을 더 좋아한다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "나는 융통성 있는 것을 더 좋아한다."
@@ -139,7 +172,7 @@ var json = {
                         {
                             "value": "A",
                             "text": "나는 사람들이나 사물에 더 관심이 많다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "나는 아이디어나 사고에 더 관심이 많다."
@@ -154,7 +187,7 @@ var json = {
                         {
                             "value": "A",
                             "text": "나는 보수성, 정통성에서 긍지를 느낀다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "나는 새로움, 독창성에서 긍지를 느낀다."
@@ -169,7 +202,7 @@ var json = {
                         {
                             "value": "A",
                             "text": "나는 다른 사람들의 실수를 참는다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "나는 다른 사람들의 실수를 용서한다."
@@ -184,7 +217,7 @@ var json = {
                         {
                             "value": "A",
                             "text": "나는 어떤 일들을 직접 일으키는 것을 생각하는 편이다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "나는 어떤 일들이 스스로 발생되는 것을 생각하는 편이다."
@@ -199,7 +232,7 @@ var json = {
                         {
                             "value": "A",
                             "text": "나는 다소 친밀하지는 않지만 많은 사람들과의 교제를 선호한다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "나는 소수의 사람들과 친밀한 교제를 선호한다."
@@ -214,7 +247,7 @@ var json = {
                         {
                             "value": "A",
                             "text": "나는 기존의 기술을 적용하는 것을 선호한다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "나는 새로운 기술을 배우는 것을 선호한다."
@@ -229,7 +262,7 @@ var json = {
                         {
                             "value": "A",
                             "text": "나는 사고하는 사람이다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "나는 감성으로 느끼는 사람이다."
@@ -244,7 +277,7 @@ var json = {
                         {
                             "value": "A",
                             "text": "나는 대부분의 경우 나의 의견을 옳다는데 긍지를 느낀다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "나는 다른 사람의 의견을 잘 받아들인다는데 긍지를 느낀다."
@@ -259,7 +292,7 @@ var json = {
                         {
                             "value": "A",
                             "text": "어떤 생각이나 느낌이 떠올랐을 때 나는 말로 즉각적인 표현을 한다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "어떤 생각이나 느낌이 떠올랐을 때 나는 표현을 안 하는 편이다."
@@ -274,7 +307,7 @@ var json = {
                         {
                             "value": "A",
                             "text": "나는 현실적인 측면에서 생각하는 편이다."
-                        }, 
+                        },
                         {
                             "value": "B",
                             "text": "나는 가능성의 측면에서 생각하는 편이다."
@@ -282,9 +315,9 @@ var json = {
                     ]
                 }
             ]
-        }, 
+        },
         // {
-        //     "name": "page2",
+        //     "name": "page3",
         //     "elements": [
         //         {
         //             "type": "radiogroup",
@@ -567,7 +600,7 @@ window.survey = new Survey.Model(json);
 survey
     .onComplete
     .add(function (result) {
-        var EI,SN,TF,JP;
+        var EI, SN, TF, JP;
 
         var EIa = 0;
         var EIb = 0;
@@ -581,13 +614,13 @@ survey
         var JPa = 0;
         var JPb = 0;
 
-        for (var i=1; i<=36; i++) {
+        for (var i = 1; i <= 36; i++) {
 
             var idx = i.toString();
             var condition = i % 4;
 
             if (JSON.stringify(result.data[idx], null, 3) == "\"A\"") {
-                switch(condition) {
+                switch (condition) {
                     case 1: EIa++;
                         break;
                     case 2: SNa++;
@@ -599,7 +632,7 @@ survey
                 }
             }
             else if (JSON.stringify(result.data[idx], null, 3) == "\"B\"") {
-                switch(condition) {
+                switch (condition) {
                     case 1: EIb++;
                         break;
                     case 2: SNb++;
@@ -625,9 +658,35 @@ survey
         if (JPa > JPb) JP = "J"
         else JP = "P"
 
+
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAbqoVfjy0q6QKcNdRnFbjalmZR5smreaQ",
+            authDomain: "lbti-4199c.firebaseapp.com",
+            databaseURL: "https://lbti-4199c-default-rtdb.firebaseio.com",
+            projectId: "lbti-4199c",
+            storageBucket: "lbti-4199c.appspot.com",
+            messagingSenderId: "262129377511",
+            appId: "1:262129377511:web:e87c347b1eb4699dd5c242",
+            measurementId: "G-WESRC0Y5RH"
+        };
+        // Initialize Firebase
+        var init = firebase.initializeApp(firebaseConfig);
+        var db = init.firestore();
+        // firebase.analytics();
+
+        let ref = db.collection('LBTI');
+
+        let setSf = ref.doc().set({ team: "teeemam", name: "naaame", leader: "L", survey: "ABBB", type: "INTP" });
+        // getting the text value from the database
+        // var bigOne = document.getElementById('bigOne');
+        // var dbRef = firebase.database().ref().child('team');
+        // dbRef.on('value', snap => bigOne.innerText = snap.val());
         document
             .querySelector('#surveyResult')
-            .getElementById('img').setAttribute("src", "image.png");
+            .textContent = EI + SN + TF + JP;
     });
 
-$("#surveyElement").Survey({model: survey});
+$("#surveyElement").Survey({ model: survey });
