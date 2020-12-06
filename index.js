@@ -665,8 +665,6 @@ survey
 
         resultType = EI + SN + TF + JP;
 
-        resultType = "ENTP";
-
         var resultText = "";
         
         if (result.data["leader"] == "L") {
