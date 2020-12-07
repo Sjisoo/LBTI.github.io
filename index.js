@@ -3,37 +3,45 @@ Survey
     .applyTheme("modern");
 
 var json = {
-    "title": "LBTI",
+    "title": "LBTI (Leadership Type Indicator on BlueBoard)",
     "pages": [
         {
             "name": "page1",
+            "title": "나의 리딩 유형은 무엇일까?",
             "elements": [
                 {
-                    "type": "text",
-                    "name": "team",
-                    "title": "팀명을 적어주세요",
-                    "isRequired": true
-                }, {
-                    "type": "text",
-                    "name": "name",
-                    "title": "성함을 적어주세요",
-                    "isRequired": true
-                }, {
-                    "type": "radiogroup",
-                    "name": "leader",
-                    "title": "당신은 팀/Unit장인가요?",
-                    "isRequired": true,
-                    "choices": [
+                    "type": "panel",
+                    "title": "본 검사를 통해 리더들은 스스로의 강점과 보완이 필요한 점을 인지할 수 있으며, 팀원들은 리더의 리딩 방식을 파악하여 서로 간의 이해를 도울 수 있습니다.",
+                    "elements": [
                         {
-                            "value": "Y",
-                            "text": "그렇다."
-                        },
-                        {
-                            "value": "N",
-                            "text": "그렇지 않다."
-                        },
+                            "type": "text",
+                            "name": "team",
+                            "title": "팀명을 적어주세요",
+                            "isRequired": true
+                        }, {
+                            "type": "text",
+                            "name": "name",
+                            "title": "성함을 적어주세요",
+                            "isRequired": true
+                        }, {
+                            "type": "radiogroup",
+                            "name": "leader",
+                            "title": "당신은 팀/Unit장인가요?",
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "Y",
+                                    "text": "그렇다."
+                                },
+                                {
+                                    "value": "N",
+                                    "text": "그렇지 않다."
+                                },
+                            ]
+                        }
                     ]
-                },
+
+                }
             ]
         },
         {
@@ -666,14 +674,14 @@ survey
         resultType = EI + SN + TF + JP;
 
         var resultText = "";
-        
+
         if (result.data["leader"] == "L") {
             resultText = result.data["team"] + " 리더 " + result.data["name"] + "님의 리더십 유형은!";
         }
         else {
             resultText = result.data["name"] + "님이 선택한 리더십 유형은!";
         }
-        
+
         var resultPeople = "";
         var resultComment = "";
         var resultImg = "./images/" + resultType;
@@ -884,7 +892,7 @@ survey
             <p> - 갈등을 피하고 싶어 하는 경향이 있습니다.</p>\
             <p> - 긍정적인 자료들을 선호하는 경향이 있어 어려운 결과의 신호를 놓칠 수 있습니다.</p>\
             ";
-            
+
         }
         else if (resultType == "INTJ") {
             resultComment = "주가란 이런거죠ㅎㅎㅎㅎㅎ";
@@ -906,7 +914,7 @@ survey
             <p> - - 자신의 이상을 추구함에 있어서, 상이한 비젼을 가진 타인을 비평하는 경향이 있다.</p>\
             ";
 
-            
+
         }
         else if (resultType == "INTP") {
             resultComment = "마음을 움직이는 승부사!";
