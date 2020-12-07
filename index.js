@@ -12,7 +12,7 @@ var json = {
                 {
                     "type": "html",
                     "name": "income_intro",
-                    "html": "<article class='intro'><div class='intro__body wysiwyg' style='font-size:17px'><p> 안녕하세요, 한화시스템/ICT 조직문화 개선 협의체 ‘블루보드’입니다.</p> <p>리더십은 직원 몰입도 향상에 영향을 미치는 중요한 요소로, 직원들은 나의 리더와 소통하여 회사의 비전을 이해하고, 업무를 통해 육성하기를 원합니다. 또한, 나의 팀장님에 대하여 알고 싶고, 배우고 싶어 합니다.</p> <p>간소화한 MBTI 검사*를 통하여 팀장님의 리더십 스타일을 알아봄으로써, 서로를 이해하고 진정성 있는 소통을 나눌 수 있는 시간을 가져보고자 합니다.</p> <p>소요시간은 약 3분이며, 본 설문은 이번 활동 외에는 사용되지 않으므로 부담 없이 참여 부탁 드립니다.</p> <p style='font-size:15px'>*MBTI(Myers-Briggs Type Indicator) : 현대 분석심리학의 대가인 카를 융의 ‘심리학적 유형론’에 근거해 사람들의 성격을 분류한 성격 유형 검사 </p></div> </article>"
+                    "html": "<article class='intro'><div class='intro__body wysiwyg' style='font-size:17px'><p> 안녕하세요, 한화시스템/ICT 조직문화 개선 협의체 ‘블루보드’입니다.</p> <p>리더십은 직원 몰입도 향상에 영향을 미치는 중요한 요소로, 직원들은 나의 리더와 소통하여 회사의 비전을 이해하고, 업무를 통해 육성하기를 원합니다. 또한, 나의 팀장님에 대하여 알고 싶고, 배우고 싶어 합니다.</p> <p>간소화한 MBTI 검사*를 통하여 팀장님의 리더십 스타일을 알아봄으로써, 서로를 이해하고 진정성 있는 소통을 나눌 수 있는 시간을 가져보고자 합니다.</p> <p>소요시간은 약 3분으로 부담 없이 참여 부탁 드립니다.</p> <p>본 설문은 이번 활동 외에는 사용되지 않으며, 수집한 데이터는 2020년 12월 31일자로 파기할 예정입니다.</p> <p style='font-size:15px'>*MBTI(Myers-Briggs Type Indicator) : 현대 분석심리학의 대가인 카를 융의 ‘심리학적 유형론’에 근거해 사람들의 성격을 분류한 성격 유형 검사 </p></div> </article>"
                 }, {
                     "type": "text",
                     "name": "team",
@@ -40,563 +40,563 @@ var json = {
                     ]
                 }
             ]
-        },
-        {
-            "name": "page2",
-            "title": "This is the page {pageno} of {pagecount}.",
-            "elements": [
-                {
-                    "type": "radiogroup",
-                    "name": "1",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "새로 생긴 팀을 맡으면 나는 그룹 토의 방식으로 의견을 나눈다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "새로 생긴 팀을 맡으면 나는 선발된 사람과 개별적 대화로 의견을 나눈다."
-                        },
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "2",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 일을 할 때 현실적인 사람들과 잘 맞는다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 일을 할 때 상상력이 풍부한 사람들과 잘 맞는다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "3",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "다른 사람들은 나를 굳센 사람으로 여길 것이다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "다른 사람들은 나를 정이 많은 사람으로 여길 것이다."
-                        }
-                    ],
-                    // "otherText": "Other",
-                    // "colCount": 3
-                }, {
-                    "type": "radiogroup",
-                    "name": "4",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 일을 계획 할 때 사전에 잘 구조화하고 설계한다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 일을 계획 할 때 유연하고 빈번한 조절이 가능하게 설계한다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "5",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 다른 사람들에게 말하기를 좋아하고, 쉽게 친해지게 되는 사람으로 여겨진다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 다른 사람들에게 말없고 조용하며, 친해지기 어려운 사람으로 여겨진다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "6",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 비즈니스 전략을 구상 할 때 세부적인 계획에 대하여 고려한다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 비즈니스 전략을 구상 할 때 넓은 안목에서 고려한다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "7",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "조직에서 다른 사람과 대화 할 때 나는 사실 그대로 말할려고 한다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "조직에서 다른 사람과 대화 할 때 나는 다른 사람의 기분을 상하게하거나 상처를 주지않도록 말할려고 한다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "8",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 체계적인 것을 더 좋아한다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 융통성 있는 것을 더 좋아한다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "9",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 사람들이나 사물에 더 관심이 많다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 아이디어나 사고에 더 관심이 많다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "10",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 보수성, 정통성에서 긍지를 느낀다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 새로움, 독창성에서 긍지를 느낀다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "11",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 다른 사람들의 실수를 못 참는다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 다른 사람들의 실수를 이해한다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "12",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 새로운 것을 발굴해 나가는 편이다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 기존의 상황을 인식하고 개선해 나가는 편이다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "13",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 다소 친밀하지는 않지만 많은 사람들과의 교제를 선호한다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 소수의 사람들과 친밀한 교제를 선호한다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "14",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 기존의 기술을 적용하는 것을 선호한다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 새로운 기술을 배우는 것을 선호한다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "15",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 사고하는 사람이다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 감성으로 느끼는 사람이다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "16",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 대부분의 경우 나의 의견을 옳다는데 긍지를 느낀다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 다른 사람의 의견을 잘 받아들인다는데 긍지를 느낀다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "17",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "어떤 생각이나 느낌이 떠올랐을 때 나는 말로 즉각적인 표현을 한다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "어떤 생각이나 느낌이 떠올랐을 때 나는 표현을 안 하는 편이다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "18",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 현실적인 측면에서 생각하는 편이다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 가능성의 측면에서 생각하는 편이다."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "page3",
-            "title": "This is the page {pageno} of {pagecount}.",
-            "elements": [
-                {
-                    "type": "radiogroup",
-                    "name": "19",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 타인이나 어떤 이슈에 대하여 직접 맞서는 편이다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 논쟁이나 어려운 이슈는 피하는 편이다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "20",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 다른 사람들에게 질서정연한 사람이라는 인상을 준다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 다른 사람들에게 태평스럽다는 인상을 준다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "21",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 다른 사람들과의 대화를 통하여 정보를 얻는다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 내가 직접 자료를 읽고 정보를 얻는다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "22",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 점진적이고 단계적인 변화를 선호한다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 전면적이고 드라마틱한 변화를 선호한다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "23",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 용납할 수 없는 일을 저지른 직원을 해고 할 수 있다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 용납할 수 없는 일을 저지른 직원을 계속 유지시키며 능력을 발전 시킬 수 있게끔 해준다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "24",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 결정을 내릴 때 즉각적인 편이다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 결정을 내릴 때 점진적인 편이다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "25",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 그룹으로 일하기를 좋아한다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 혼자 일하기를 좋아한다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "26",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 업무의 실제적인 측면을 토론하고 평가한다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 업무의 개념적 측면을 토론하고 평가한다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "27",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 우선 비평하고, 그 다음에 칭찬하는 경향이 있다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 우선 칭찬하고, 그 다음에 비평하는 경향이 있다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "28",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 미리 계획을 세워 마감일 전에 일을 마치는 편이다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 마감 일에 쫓겨 일을 끝내는 편이다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "29",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "중요한 외적 변화에 있어 나는 먼저 행동하고, 생각하고, 행동한다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "중요한 외적 변화에 있어 나는 먼저 생각하고, 행동하고, 생각한다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "30",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 세부적인 것을 이해하고 나서 전체 그림을 본다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 전체 그림을 이해하고 나서 세부사항을 본다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "31",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 프로그램을 통하여 조직의 역량을 향상시키고저 한다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 사람들을 통하여 조직의 역량을 향상시키고자 한다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "32",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 한가지 전략을 오랫동안 고수함으로써 전략적 실수를 할 수 있다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 쉽게 전략을 바꿈으로써 전략적 실수를 할 수 있다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "33",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "다른 사람들은 나를 다소 외향적이라고 여길 것이다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "다른 사람들은 나를 다소 내성적이라고 여길 것이다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "34",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 업무를 평가할 때 현재의 성과를 생각한다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 업무를 평가할 때 장래 잠재력을 생각한다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "35",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "나는 실수를 지적해 줌으로써 일의 결과를 향상시키고자 한다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "나는 그들의 노력에 대하여 칭찬해 줌으로서 일의 결과를 향상시키고자 한다."
-                        }
-                    ]
-                }, {
-                    "type": "radiogroup",
-                    "name": "36",
-                    "title": " ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A",
-                            "text": "미래를 준비하는 최상의 방법은 신중하게 미래를 위한 계획을 세우는 것이다."
-                        },
-                        {
-                            "value": "B",
-                            "text": "미래를 준비하는 최상의 방법은 대담하게 미래를 만들어 가는 것이다."
-                        }
-                    ]
-                }
-            ]
         }
+        // {
+        //     "name": "page2",
+        //     "title": "This is the page {pageno} of {pagecount}.",
+        //     "elements": [
+        //         {
+        //             "type": "radiogroup",
+        //             "name": "1",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "새로 생긴 팀을 맡으면 나는 그룹 토의 방식으로 의견을 나눈다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "새로 생긴 팀을 맡으면 나는 선발된 사람과 개별적 대화로 의견을 나눈다."
+        //                 },
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "2",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 일을 할 때 현실적인 사람들과 잘 맞는다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 일을 할 때 상상력이 풍부한 사람들과 잘 맞는다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "3",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "다른 사람들은 나를 굳센 사람으로 여길 것이다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "다른 사람들은 나를 정이 많은 사람으로 여길 것이다."
+        //                 }
+        //             ],
+        //             // "otherText": "Other",
+        //             // "colCount": 3
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "4",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 일을 계획 할 때 사전에 잘 구조화하고 설계한다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 일을 계획 할 때 유연하고 빈번한 조절이 가능하게 설계한다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "5",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 다른 사람들에게 말하기를 좋아하고, 쉽게 친해지게 되는 사람으로 여겨진다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 다른 사람들에게 말없고 조용하며, 친해지기 어려운 사람으로 여겨진다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "6",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 비즈니스 전략을 구상 할 때 세부적인 계획에 대하여 고려한다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 비즈니스 전략을 구상 할 때 넓은 안목에서 고려한다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "7",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "조직에서 다른 사람과 대화 할 때 나는 사실 그대로 말할려고 한다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "조직에서 다른 사람과 대화 할 때 나는 다른 사람의 기분을 상하게하거나 상처를 주지않도록 말할려고 한다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "8",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 체계적인 것을 더 좋아한다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 융통성 있는 것을 더 좋아한다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "9",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 사람들이나 사물에 더 관심이 많다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 아이디어나 사고에 더 관심이 많다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "10",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 보수성, 정통성에서 긍지를 느낀다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 새로움, 독창성에서 긍지를 느낀다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "11",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 다른 사람들의 실수를 못 참는다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 다른 사람들의 실수를 이해한다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "12",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 새로운 것을 발굴해 나가는 편이다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 기존의 상황을 인식하고 개선해 나가는 편이다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "13",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 다소 친밀하지는 않지만 많은 사람들과의 교제를 선호한다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 소수의 사람들과 친밀한 교제를 선호한다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "14",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 기존의 기술을 적용하는 것을 선호한다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 새로운 기술을 배우는 것을 선호한다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "15",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 사고하는 사람이다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 감성으로 느끼는 사람이다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "16",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 대부분의 경우 나의 의견을 옳다는데 긍지를 느낀다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 다른 사람의 의견을 잘 받아들인다는데 긍지를 느낀다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "17",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "어떤 생각이나 느낌이 떠올랐을 때 나는 말로 즉각적인 표현을 한다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "어떤 생각이나 느낌이 떠올랐을 때 나는 표현을 안 하는 편이다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "18",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 현실적인 측면에서 생각하는 편이다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 가능성의 측면에서 생각하는 편이다."
+        //                 }
+        //             ]
+        //         }
+        //     ]
+        // },
+        // {
+        //     "name": "page3",
+        //     "title": "This is the page {pageno} of {pagecount}.",
+        //     "elements": [
+        //         {
+        //             "type": "radiogroup",
+        //             "name": "19",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 타인이나 어떤 이슈에 대하여 직접 맞서는 편이다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 논쟁이나 어려운 이슈는 피하는 편이다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "20",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 다른 사람들에게 질서정연한 사람이라는 인상을 준다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 다른 사람들에게 태평스럽다는 인상을 준다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "21",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 다른 사람들과의 대화를 통하여 정보를 얻는다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 내가 직접 자료를 읽고 정보를 얻는다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "22",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 점진적이고 단계적인 변화를 선호한다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 전면적이고 드라마틱한 변화를 선호한다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "23",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 용납할 수 없는 일을 저지른 직원을 해고 할 수 있다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 용납할 수 없는 일을 저지른 직원을 계속 유지시키며 능력을 발전 시킬 수 있게끔 해준다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "24",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 결정을 내릴 때 즉각적인 편이다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 결정을 내릴 때 점진적인 편이다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "25",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 그룹으로 일하기를 좋아한다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 혼자 일하기를 좋아한다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "26",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 업무의 실제적인 측면을 토론하고 평가한다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 업무의 개념적 측면을 토론하고 평가한다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "27",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 우선 비평하고, 그 다음에 칭찬하는 경향이 있다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 우선 칭찬하고, 그 다음에 비평하는 경향이 있다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "28",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 미리 계획을 세워 마감일 전에 일을 마치는 편이다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 마감 일에 쫓겨 일을 끝내는 편이다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "29",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "중요한 외적 변화에 있어 나는 먼저 행동하고, 생각하고, 행동한다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "중요한 외적 변화에 있어 나는 먼저 생각하고, 행동하고, 생각한다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "30",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 세부적인 것을 이해하고 나서 전체 그림을 본다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 전체 그림을 이해하고 나서 세부사항을 본다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "31",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 프로그램을 통하여 조직의 역량을 향상시키고저 한다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 사람들을 통하여 조직의 역량을 향상시키고자 한다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "32",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 한가지 전략을 오랫동안 고수함으로써 전략적 실수를 할 수 있다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 쉽게 전략을 바꿈으로써 전략적 실수를 할 수 있다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "33",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "다른 사람들은 나를 다소 외향적이라고 여길 것이다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "다른 사람들은 나를 다소 내성적이라고 여길 것이다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "34",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 업무를 평가할 때 현재의 성과를 생각한다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 업무를 평가할 때 장래 잠재력을 생각한다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "35",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "나는 실수를 지적해 줌으로써 일의 결과를 향상시키고자 한다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "나는 그들의 노력에 대하여 칭찬해 줌으로서 일의 결과를 향상시키고자 한다."
+        //                 }
+        //             ]
+        //         }, {
+        //             "type": "radiogroup",
+        //             "name": "36",
+        //             "title": " ",
+        //             "isRequired": true,
+        //             "choices": [
+        //                 {
+        //                     "value": "A",
+        //                     "text": "미래를 준비하는 최상의 방법은 신중하게 미래를 위한 계획을 세우는 것이다."
+        //                 },
+        //                 {
+        //                     "value": "B",
+        //                     "text": "미래를 준비하는 최상의 방법은 대담하게 미래를 만들어 가는 것이다."
+        //                 }
+        //             ]
+        //         }
+        //     ]
+        // }
     ]
 };
 
@@ -1000,7 +1000,12 @@ survey
             .querySelector('#surveyContents')
             .innerHTML = resultMSG;
 
+        // var encoded = CryptoJS.AES.encrypt(result.data["team"], "1111");
 
+        // alert(encoded);
+
+        // var decoded = CryptoJS.AES.decrypt(encoded, "1111").toString(CryptoJS.enc.Utf8);
+        // alert(decoded, "1111");
 
         var firebaseConfig = {
             apiKey: "AIzaSyAbqoVfjy0q6QKcNdRnFbjalmZR5smreaQ",
@@ -1020,8 +1025,8 @@ survey
         // let ref = db.collection('LBTI');
         // Add a new document in collection "cities"
         db.collection("LBTI").doc().set({
-            team: String(result.data["team"]),
-            name: String(result.data["name"]),
+            team: String(CryptoJS.AES.encrypt(result.data["team"], "1111")),
+            name: String(CryptoJS.AES.encrypt(result.data["name"], "1111")),
             leader: String(result.data["leader"]),
             survey: String(arr),
             type: String(resultType)
