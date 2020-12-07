@@ -2,50 +2,48 @@ Survey
     .StylesManager
     .applyTheme("modern");
 
+
 var json = {
-    "title": "LBTI (Leadership Type Indicator on BlueBoard)",
+    "title": "MBTI로 알아보는 리더십 유형",
     "pages": [
         {
             "name": "page1",
-            "title": "나의 리딩 유형은 무엇일까?",
             "elements": [
                 {
-                    "type": "panel",
-                    "title": "본 검사를 통해 리더들은 스스로의 강점과 보완이 필요한 점을 인지할 수 있으며, 팀원들은 리더의 리딩 방식을 파악하여 서로 간의 이해를 도울 수 있습니다.",
-                    "elements": [
+                    "type": "html",
+                    "name": "income_intro",
+                    "html": "<article class='intro'><div class='intro__body wysiwyg' style='font-size:17px'><p> 안녕하세요, 한화시스템/ICT 조직문화 개선 협의체 ‘블루보드’입니다.</p> <p>리더십은 직원 몰입도 향상에 영향을 미치는 중요한 요소로, 직원들은 나의 리더와 소통하여 회사의 비전을 이해하고, 업무를 통해 육성하기를 원합니다. 또한, 나의 팀장님에 대하여 알고 싶고, 배우고 싶어 합니다.</p> <p>간소화한 MBTI 검사*를 통하여 팀장님의 리더십 스타일을 알아봄으로써, 서로를 이해하고 진정성 있는 소통을 나눌 수 있는 시간을 가져보고자 합니다.</p> <p>소요시간은 약 3분이며, 본 설문은 이번 활동 외에는 사용되지 않으므로 부담 없이 참여 부탁 드립니다.</p> <p style='font-size:15px'>*MBTI(Myers-Briggs Type Indicator) : 현대 분석심리학의 대가인 카를 융의 ‘심리학적 유형론’에 근거해 사람들의 성격을 분류한 성격 유형 검사 </p></div> </article>"
+                }, {
+                    "type": "text",
+                    "name": "team",
+                    "title": "팀명을 적어주세요",
+                    "isRequired": true
+                }, {
+                    "type": "text",
+                    "name": "name",
+                    "title": "성함을 적어주세요",
+                    "isRequired": true
+                }, {
+                    "type": "radiogroup",
+                    "name": "leader",
+                    "title": "당신은 팀/Unit장인가요?",
+                    "isRequired": true,
+                    "choices": [
                         {
-                            "type": "text",
-                            "name": "team",
-                            "title": "팀명을 적어주세요",
-                            "isRequired": true
-                        }, {
-                            "type": "text",
-                            "name": "name",
-                            "title": "성함을 적어주세요",
-                            "isRequired": true
-                        }, {
-                            "type": "radiogroup",
-                            "name": "leader",
-                            "title": "당신은 팀/Unit장인가요?",
-                            "isRequired": true,
-                            "choices": [
-                                {
-                                    "value": "Y",
-                                    "text": "그렇다."
-                                },
-                                {
-                                    "value": "N",
-                                    "text": "그렇지 않다."
-                                },
-                            ]
-                        }
+                            "value": "Y",
+                            "text": "그렇다."
+                        },
+                        {
+                            "value": "N",
+                            "text": "그렇지 않다."
+                        },
                     ]
-
                 }
             ]
         },
         {
             "name": "page2",
+            "title": "This is the page {pageno} of {pagecount}.",
             "elements": [
                 {
                     "type": "radiogroup",
@@ -162,7 +160,7 @@ var json = {
                     "choices": [
                         {
                             "value": "A",
-                            "text": "나는 조직적인 것을 더 좋아한다."
+                            "text": "나는 체계적인 것을 더 좋아한다."
                         },
                         {
                             "value": "B",
@@ -207,11 +205,11 @@ var json = {
                     "choices": [
                         {
                             "value": "A",
-                            "text": "나는 다른 사람들의 실수를 참는다."
+                            "text": "나는 다른 사람들의 실수를 못 참는다."
                         },
                         {
                             "value": "B",
-                            "text": "나는 다른 사람들의 실수를 용서한다."
+                            "text": "나는 다른 사람들의 실수를 이해한다."
                         }
                     ]
                 }, {
@@ -222,11 +220,11 @@ var json = {
                     "choices": [
                         {
                             "value": "A",
-                            "text": "나는 어떤 일들을 직접 일으키는 것을 생각하는 편이다."
+                            "text": "나는 새로운 것을 발굴해 나가는 편이다."
                         },
                         {
                             "value": "B",
-                            "text": "나는 어떤 일들이 스스로 발생되는 것을 생각하는 편이다."
+                            "text": "나는 기존의 상황을 인식하고 개선해 나가는 편이다."
                         }
                     ]
                 }, {
@@ -324,6 +322,7 @@ var json = {
         },
         {
             "name": "page3",
+            "title": "This is the page {pageno} of {pagecount}.",
             "elements": [
                 {
                     "type": "radiogroup",
