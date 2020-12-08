@@ -670,7 +670,10 @@ survey
         if (JPa > JPb) JP = "J"
         else JP = "P"
 
+
         resultType = EI + SN + TF + JP;
+        // resultType = "ENTJ";
+
 
         var resultText = "";
 
@@ -705,8 +708,8 @@ survey
             ";
         }
         else if (resultType == "ISTP") {
-            resultComment = "초콜릿은 내 것,,";
-            resultPeople = "김정은";
+            resultComment = "IT계의 에디슨! 트위터 창업자!";
+            resultPeople = "잭 도로시";
             resultImg += ".jpg";
             resultMSG = "<p> - 즉시 실행할 수 있는 처리 방법을 가지고, 구체적인 행동 계획을 세우는 것을 선호한다.</p>\
             <p> - 상황에 맞추어 추진 방향을 설정하고, 새로운 변화에도 빠른 적응력을 보인다.</p>\
@@ -754,8 +757,8 @@ survey
             ";
         }
         else if (resultType == "ISFJ") {
-            resultComment = "올 겨울은 유독 춥네요...";
-            resultPeople = "아베";
+            resultComment = "";
+            resultPeople = "엘리자베스 2세";
             resultImg += ".jpg";
             resultMSG = "<p> - 업무 추진 방향을 설정할 때에는 각 상황의 세부사항 뿐만 아니라, 고객의 요구를 함께 고려합니다.</p>\
             <p> - 주어진 자원과 조직의 지난 과정들을 모두 고려하여, 현실적인 업무 추진 방향과 구체적인 실행 방법을 수립합니다.</p>\
@@ -770,9 +773,9 @@ survey
             ";
         }
         else if (resultType == "ISFP") {
-            resultComment = "올 겨울도 춥네요...";
-            resultPeople = "박근혜";
-            resultImg += ".jpg";
+            resultComment = "애플 수석 디자이너!";
+            resultPeople = "조나단 이브";
+            resultImg += ".png";
             resultMSG = "<p> - 방향 설정을 돕기 위한 구성원들의 관점을 받아드립니다.</p>\
             <p> - 목표를 실행하는 첫 단계에서부터 현재 상황을 날카롭게 파악합니다.</p>\
             <p> - 상황이 변화와 전후 관계에 따라 필요한 경우 목표를 조정합니다.</p>\
@@ -916,9 +919,9 @@ survey
 
         }
         else if (resultType == "INTP") {
-            resultComment = "마음을 움직이는 승부사!";
-            resultPeople = "제갈량";
-            resultImg += ".png";
+            resultComment = "구글의 CEO!";
+            resultPeople = "래리 페이지";
+            resultImg += ".jpeg";
             resultMSG = "<p> - 인구의 단 3%만을 차지하며, 일반적인 규칙이나 상식에 얽매이지 않는 것으로 유명한 타입이다. </p>\
             <p> - 보통 천재라고 일컫는 인물들이 많이 포함되어있으며, 흔히 티비나 드라마에서 괴짜 박사처럼 나오는 인간형이라고 볼 수 있다.</p>\
             <p> - 그 특징으로는 우선, 어떤 사건을 바라볼 때 한쪽 면에서 바라보는 것보다는 다양한 면에서 살펴보길 좋아하며, 그 내부의 모순이나 문제에 대해서 끊임없이 궁금해하고 탐구해나가는 특성 덕분에 인류 발전에 기여할만한 성과 또한 많이 이뤄낸다.</p>\
@@ -939,9 +942,9 @@ survey
             ";
         }
         else if (resultType == "ENTP") {
-            resultComment = "내 인생,, my way";
-            resultPeople = "블라디미르 푸틴";
-            resultImg += ".jpg";
+            resultComment = "세기의 천재!";
+            resultPeople = "폰 노이만";
+            resultImg += ".png";
             resultMSG = "<p> - 선천적으로 입담이 좋고, 말을 잘하기 때문에 상대와의 논쟁이나 변론 등을 좋아한다. </p>\
             <p> - 또, 상대방 의견에 있어서 모순을 정확하게 찝어낼 수 있는 능력 덕분에 대화에 있어 주도권을 끌고 나가거나 날카로운 비판으로 압도하는 경우도 많다. </p>\
             <p> - 즉, 남들과의 타협이나 이해를 바탕으로 합의점을 찾는 게 아니라, 끊임없이 자신의 주장에 대해 타당성을 제시하며, 반대 진영의 약점에 대해선 즉각적인 공격을 통해서 해결 방안을 찾아나가는 타입이라는 뜻이다. 이는 자기가 가진 생각이 소수파일지라도 다르지 않다. </p>\
@@ -956,9 +959,9 @@ survey
             ";
         }
         else if (resultType == "ENTJ") {
-            resultComment = "전 미국 대통령!";
-            resultPeople = "프랭클링 D. 루스벨트";
-            resultImg += ".png";
+            resultComment = "전자기기에 감성을 불어 넣다!";
+            resultPeople = "스티브 잡스";
+            resultImg += ".jpeg";
             resultMSG = "<p> - 명칭에서도 알 수 있듯이 전형적인 리더형이 바로 ENTJ의 기본 특징이라고 할 수 있다. </p>\
             <p> - 타고난 카리스마로 사람들을 통제하고 이끌며, 뛰어난 판단력으로 부하들을 지휘하는데 익숙하다. </p>\
             <p> - 흔히 대기업의 총수들이 이에 많이 속해있는데 그래서인지 몰라도 대담한 통솔자들은 사회적으로 높은 위치에 있거나 큰 부를 축적한 경우가 많은 편이다. </p>\
@@ -977,10 +980,6 @@ survey
         }
 
 
-
-
-
-
         document
             .querySelector('#surveyText')
             .textContent = resultText;
@@ -993,8 +992,11 @@ survey
             .querySelector('#surveyResultComment')
             .textContent = resultComment;
 
-        document.getElementById('image').src = resultImg;
+        document
+            .querySelector('#surveyMBTI')
+            .textContent = "혹시 당신의 MBTI는... " + resultType + "..?";
 
+        document.getElementById('image').src = resultImg;
 
         document
             .querySelector('#surveyContents')
