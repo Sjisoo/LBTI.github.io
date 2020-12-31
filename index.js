@@ -8,41 +8,6 @@ var json = {
     "pages": [
         {
             "name": "page1",
-            "elements": [
-                {
-                    "type": "html",
-                    "name": "income_intro",
-                    "html": "<article class='intro'><div class='intro__body wysiwyg' style='font-size:17px'><p> 안녕하세요, 한화시스템/ICT 조직문화 개선 협의체 ‘블루보드’입니다.</p> <p>리더십은 직원 몰입도 향상에 영향을 미치는 중요한 요소로, 직원들은 나의 리더와 소통하여 회사의 비전을 이해하고, 업무를 통해 육성하기를 원합니다. 또한, 나의 팀장님에 대하여 알고 싶고, 배우고 싶어 합니다.</p> <p>간소화한 MBTI 검사*를 통하여 팀장님의 리더십 스타일을 알아봄으로써, 서로를 이해하고 진정성 있는 소통을 나눌 수 있는 시간을 가져보고자 합니다.</p> <p>소요시간은 약 3분으로 부담 없이 참여 부탁 드립니다.</p> <p>본 설문은 이번 활동 외에는 사용되지 않으며, 수집한 데이터는 2020년 12월 31일자로 파기할 예정입니다.</p> <p style='font-size:15px'>*MBTI(Myers-Briggs Type Indicator) : 현대 분석심리학의 대가인 카를 융의 ‘심리학적 유형론’에 근거해 사람들의 성격을 분류한 성격 유형 검사 </p></div> </article>"
-                }, {
-                    "type": "text",
-                    "name": "team",
-                    "title": "팀명을 적어주세요",
-                    "isRequired": true
-                }, {
-                    "type": "text",
-                    "name": "name",
-                    "title": "성함을 적어주세요",
-                    "isRequired": true
-                }, {
-                    "type": "radiogroup",
-                    "name": "leader",
-                    "title": "당신은 팀/Unit장인가요?",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "Y",
-                            "text": "그렇다."
-                        },
-                        {
-                            "value": "N",
-                            "text": "그렇지 않다."
-                        },
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "page2",
             "title": "This is the page {pageno} of {pagecount}.",
             "elements": [
                 {
@@ -321,7 +286,7 @@ var json = {
             ]
         },
         {
-            "name": "page3",
+            "name": "page2",
             "title": "This is the page {pageno} of {pagecount}.",
             "elements": [
                 {
@@ -1008,36 +973,36 @@ survey
         // var decoded = CryptoJS.AES.decrypt(encoded, "1111").toString(CryptoJS.enc.Utf8);
         // alert(decoded, "1111");
 
-        var firebaseConfig = {
-            apiKey: "AIzaSyAbqoVfjy0q6QKcNdRnFbjalmZR5smreaQ",
-            authDomain: "lbti-4199c.firebaseapp.com",
-            databaseURL: "https://lbti-4199c-default-rtdb.firebaseio.com",
-            projectId: "lbti-4199c",
-            storageBucket: "lbti-4199c.appspot.com",
-            messagingSenderId: "262129377511",
-            appId: "1:262129377511:web:e87c347b1eb4699dd5c242",
-            measurementId: "G-WESRC0Y5RH"
-        };
-        // Initialize Firebase
-        var init = firebase.initializeApp(firebaseConfig);
-        var db = init.firestore();
-        // firebase.analytics();
+    //     var firebaseConfig = {
+    //         apiKey: "AIzaSyAbqoVfjy0q6QKcNdRnFbjalmZR5smreaQ",
+    //         authDomain: "lbti-4199c.firebaseapp.com",
+    //         databaseURL: "https://lbti-4199c-default-rtdb.firebaseio.com",
+    //         projectId: "lbti-4199c",
+    //         storageBucket: "lbti-4199c.appspot.com",
+    //         messagingSenderId: "262129377511",
+    //         appId: "1:262129377511:web:e87c347b1eb4699dd5c242",
+    //         measurementId: "G-WESRC0Y5RH"
+    //     };
+    //     // Initialize Firebase
+    //     var init = firebase.initializeApp(firebaseConfig);
+    //     var db = init.firestore();
+    //     // firebase.analytics();
 
-        // let ref = db.collection('LBTI');
-        // Add a new document in collection "cities"
-        db.collection("LBTI").doc().set({
-            team: String(CryptoJS.AES.encrypt(result.data["team"], "1111")),
-            name: String(CryptoJS.AES.encrypt(result.data["name"], "1111")),
-            leader: String(result.data["leader"]),
-            survey: String(arr),
-            type: String(resultType)
-        })
-            .then(function () {
-                console.log("Document successfully written!");
-            })
-            .catch(function (error) {
-                console.error("Error writing document: ", error);
-            });
-    });
+    //     // let ref = db.collection('LBTI');
+    //     // Add a new document in collection "cities"
+    //     db.collection("LBTI").doc().set({
+    //         team: String(CryptoJS.AES.encrypt(result.data["team"], "1111")),
+    //         name: String(CryptoJS.AES.encrypt(result.data["name"], "1111")),
+    //         leader: String(result.data["leader"]),
+    //         survey: String(arr),
+    //         type: String(resultType)
+    //     })
+    //         .then(function () {
+    //             console.log("Document successfully written!");
+    //         })
+    //         .catch(function (error) {
+    //             console.error("Error writing document: ", error);
+    //         });
+    // });
 
 $("#surveyElement").Survey({ model: survey });
