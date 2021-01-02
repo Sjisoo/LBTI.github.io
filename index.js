@@ -965,44 +965,6 @@ survey
         document
             .querySelector('#surveyContents')
             .innerHTML = resultMSG;
-
-        // var encoded = CryptoJS.AES.encrypt(result.data["team"], "1111");
-
-        // alert(encoded);
-
-        // var decoded = CryptoJS.AES.decrypt(encoded, "1111").toString(CryptoJS.enc.Utf8);
-        // alert(decoded, "1111");
-
-    //     var firebaseConfig = {
-    //         apiKey: "AIzaSyAbqoVfjy0q6QKcNdRnFbjalmZR5smreaQ",
-    //         authDomain: "lbti-4199c.firebaseapp.com",
-    //         databaseURL: "https://lbti-4199c-default-rtdb.firebaseio.com",
-    //         projectId: "lbti-4199c",
-    //         storageBucket: "lbti-4199c.appspot.com",
-    //         messagingSenderId: "262129377511",
-    //         appId: "1:262129377511:web:e87c347b1eb4699dd5c242",
-    //         measurementId: "G-WESRC0Y5RH"
-    //     };
-    //     // Initialize Firebase
-    //     var init = firebase.initializeApp(firebaseConfig);
-    //     var db = init.firestore();
-    //     // firebase.analytics();
-
-    //     // let ref = db.collection('LBTI');
-    //     // Add a new document in collection "cities"
-    //     db.collection("LBTI").doc().set({
-    //         team: String(CryptoJS.AES.encrypt(result.data["team"], "1111")),
-    //         name: String(CryptoJS.AES.encrypt(result.data["name"], "1111")),
-    //         leader: String(result.data["leader"]),
-    //         survey: String(arr),
-    //         type: String(resultType)
-    //     })
-    //         .then(function () {
-    //             console.log("Document successfully written!");
-    //         })
-    //         .catch(function (error) {
-    //             console.error("Error writing document: ", error);
-    //         });
-    // });
+    });
 
 $("#surveyElement").Survey({ model: survey });
